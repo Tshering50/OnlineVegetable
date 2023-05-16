@@ -4,7 +4,7 @@ const app = express();
 const path = require("path");
 const viewRoutes = require("./router/viewsroutes");
 
-app.set("view engine", "html");
+app.set('view engine', 'ejs');
 
 
 
