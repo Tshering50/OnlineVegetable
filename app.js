@@ -5,12 +5,13 @@ const path = require("path");
 const viewRoutes = require("./router/viewsroutes");
 
 app.set('view engine', 'ejs');
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
 
 
 
 app.use("/",viewRoutes);
 
-app.use(express.static(path.join(__dirname, "views")));
 
 
 const port = process.env.PORT || 4001;
