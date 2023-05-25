@@ -4,6 +4,7 @@ const router = express.Router()
 
 router.get("/",viewController.getIndex);
 
+router.get("/register",viewController.getRegisterform);
 
 
 

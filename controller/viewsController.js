@@ -5,3 +5,6 @@ exports.getIndex = (req, res) => {
   res.render("index");
 };
 
+exports.getRegisterform = (req, res) => {
+  res.render("register");
+};
